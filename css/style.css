@@ -8,8 +8,12 @@
     font-family:rb;
     src:url("roboto.bold.ttf");
 }
+body,html{
+    width: 100%;
+}
 .container-fluid {
-  padding:0px;
+    padding: 0px;
+    overflow:hidden;
 }
 .navbar {
     font-family: 'Raleway';
@@ -26,7 +30,13 @@
     -webkit-transform:translateZ(0);
     z-index: 1;
 }
-
+#demo{
+    width: 70%;
+    height: 50px;
+    margin: 50px auto;
+    font-size: 40px;
+    color:#de302f;
+}
 .navbar div{
     margin:0 20px;
     padding:10px;
@@ -40,17 +50,11 @@
 .img-wrapper{
     background-attachment:fixed;
     background-position: center;
-    background-size: contain;
-    background-image:url("abhilekh.jpg");
-    min-height: 630px;
     background-size: 100% 100%;
+    background-image:url("abhilekh.jpg");
+    min-height: 700px;
     background-repeat:no-repeat;
     overflow:hidden;
-    box-sizing: border-box;
-}
-.wrapper{
-    overflow: hidden;
-    position: relative;
 }
 .butt{
     background: #222222;
@@ -174,6 +178,116 @@ h1{
     height: inherit;
     background-color: black;
 }
+.startup{
+    width: 100%;
+    min-height: 80px;
+    padding: 30px 0px;
+    color: white;
+    background-color: #de302f;
+    font-family: 'Raleway';
+    font-size: 50px;
+    text-align: center;
+    word-spacing: 5px;
+}
+#ajinkya{
+    position: relative;
+    height:600px;
+    background-color: #222;
+}
+#abhilekh{
+    position: relative;
+    height: 600px;
+    background-color: #333;
+}
+.founder-head{
+    padding: 20px 0px;
+    position: absolute;
+    top:-20px;
+    left: 0;
+    min-height: 40px;
+    background-color: #de302f;
+    width: 100%;
+}
+.founder-content{
+    padding: 10px;
+    position: absolute;
+    top:350px;
+    margin:10px 20px;
+}
+.found-header{
+    font-weight: bold;
+    width: 100%;
+    min-height: 50px;
+    background-color: #333;
+    font-size: 50px;
+    font-family: 'Raleway';
+    color: #de302f;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.founder-pic{
+    position: absolute;
+    top:80px;
+    width:300px;
+    height: 250px;
+    background-color: white;
+}
+.contact{
+    width: 100%;
+    min-height: 500px;
+    background-color: #333;
+    padding: 20px 30px;
+}
+.contact-text{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: white;
+    width: 60%;
+    height: 50px;
+    position: relative;
+    transition:all 0.3s ease-in-out;
+}
+.contact-msg{
+    width:80%;
+    background-color: transparent;
+    padding:5px 50px 300px 5px;
+    margin: 0 auto;
+    margin-left: 10%;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    position: relative;
+}
+
+.contact-msg:focus{
+    outline: none !important;
+    border:1px solid white;
+}
+.contact-text:focus{
+    outline: none !important;
+    border-bottom: 1px solid white;
+}
+.submit-btn{
+    width: 300px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 20px;
+    border:5px solid #222;
+    transition: all 0.3s ease-in-out;
+}
+.submit-btn:hover{
+    background-color: white;
+    color: black;
+    border: 5px solid #333;
+}
+
 @media screen and (max-width:650px){
     .navbar{
         display: none;
@@ -191,5 +305,9 @@ h1{
     .board-box{
         width:150px;
         height: auto;
+    }
+    #events-box{
+        min-height: 1000px;
+        padding: 0px !important;
     }
 }

@@ -14,6 +14,11 @@ $(document).ready(function(){
           scrollTop: $(".board").offset().top
       },1000);
    });
+    $(".nav-contact").click(function(){
+      $('html,body').animate({
+          scrollTop: $(".contact").offset().top
+      },1000);
+   });
     $(window).scroll(function(){
         var d= $(this).scrollTop();
         if(d>580)
@@ -22,12 +27,28 @@ $(document).ready(function(){
             }
         
         else{
-               $(".navbar").css({'transition':'0.3s ease','background-color':'transparent'}); 
-            
+               $(".navbar").css({'transition':'0.3s ease','background-color':'transparent'});   
         }
             });
-    $(".board-box").click(function(){
+    var countDownDate = new Date("Apr 21, 2017 15:37:25").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
         
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
     });
-    
-});
