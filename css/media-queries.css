@@ -1,0 +1,48 @@
+@media screen and (max-width:650px){
+    .navbar{
+        display: none;
+    }
+    .mob{
+        display: inline-block;
+        position: fixed;
+        right:5px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: transparent;
+        z-index: 1;
+    }
+    .board-box{
+        width:150px;
+        height: auto;
+    }
+    #events-box{
+        min-height: 1000px;
+        padding: 0px !important;
+    }
+    .img-wrapper{
+        background-image: url(mobile%20home.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    }
+    .type-out{  
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 25px;
+    }
+    .mobile-contact{
+        font-size: 250px;
+    }
+    .icons{
+        transform: scale(0.7);
+    }
+    .founder-header{
+        font-size:32px;
+        padding-bottom: 0px;
+    }
+}
