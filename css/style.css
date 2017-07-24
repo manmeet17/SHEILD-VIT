@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 @font-face{
@@ -15,7 +17,7 @@ body,html{
 .par{
   text-align:center;
   padding:50px;
-    z-index: 9999;
+  z-index: 9999;
 }
 .initial{
   margin:200px 100px;
@@ -46,13 +48,13 @@ body,html{
 }
 @keyframes spin {
     0%   {
-        transform: rotate(0deg) scale(1); 
+        transform: rotate(0deg) scale(1);
   }
   50%{
     transform: rotate(180deg) scale(1.5);
   }
     100% {
-        -webkit-transform: rotate(360deg) scale(1); 
+        -webkit-transform: rotate(360deg) scale(1);
     }
 }
 
@@ -83,6 +85,9 @@ body,html{
     font-size: 40px;
     color:#de302f;
 }
+#events-box{
+  min-width: 600px;
+}
 .navbar div{
     margin:0 25px;
     padding:10px;
@@ -90,7 +95,7 @@ body,html{
     font-size: 15px;
 }
 .navbar div:hover{
-    
+
     background-color: #de302f;
     cursor: pointer;
     transition: 0.3s ease;
@@ -141,7 +146,7 @@ body,html{
     100% { opacity:1; }
 }
 .butt{
-    
+
     background: #222222;
     color: #e3e3e3;
     font-family: Sans-serif;
@@ -156,7 +161,7 @@ body,html{
     cursor:pointer;
 }
 .butt:hover {
-  
+
     background: #e3e3e3;
     color:#222222
 }
@@ -166,20 +171,21 @@ body,html{
 }
 .image-333{
     background-color: #333;
-    width: 800px;
-    height: auto;   
+    min-width: 900px;
+    height: auto;
 }
 
 .image-222{
     background-color: #222;
-    width: 800px;
-    height: auto;   
+    min-width: 900px;
+    height: auto;
 }
 h1{
     font-size: 55px;
 }
 .about{
     padding:40px 65px 60px 60px;
+    min-height: 500px;
 }
 .member{
     color: #333;
@@ -192,7 +198,7 @@ h1{
 }
 .join-us {
     color: white;
-    background-color: #333; 
+    background-color: #333;
     border: none;
     color: white;
     padding: 20px 50px;
@@ -209,7 +215,7 @@ h1{
     color: #de302f;
     padding:40px 65px 0px 65px;
     font-family: 'Raleway', sans-serif;
-    font-size: 55px; 
+    font-size: 55px;
 }
 .prototype p{
     padding: 0;
@@ -266,7 +272,7 @@ h1{
     background-attachment: fixed;
     position: relative;
     width:100%;
-    min-height: 450px; 
+    min-height: 450px;
 }
 .red-tint img{
     display: inline-block;
@@ -285,7 +291,7 @@ h1{
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
-    
+
 }
 .board-details{
     width: 40%;
@@ -297,7 +303,7 @@ h1{
 }
 .board-box{
     width:150px;
-    height:255px;  
+    height:255px;
     cursor: pointer;
     width: calc(100% * (1/8.5) - 10px - 1px);
     margin: 0px 3%;
