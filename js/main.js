@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    var eventsArray = ['Prototype','Startup Street','Beg Borrow Startup','Ideathon'];
+    var i=0;
+    setInterval(function () {
+      i = (i+1)%4;
+      $('.timer p:first').fadeOut(function() {
+        $(this).text(eventsArray[i]);
+        $(this).fadeIn();
+      });
+    }, 2000);
     $(".type-out").typed({
        strings: ["S.H.E.I.L.D.", "Startups Hub for Entrepreneurs and an Initiative for Leadership Development"],
         typeSpeed: 50,
@@ -9,7 +18,7 @@ $(document).ready(function(){
     $(".nav-abt").click(function(){
       $('html,body').animate({
           scrollTop: $(".about").offset().top
-      },1000); 
+      },1000);
    });
     $(".nav-event").click(function(){
       $('html,body').animate({
@@ -37,29 +46,27 @@ $(document).ready(function(){
         }
         if(d>580)
             {
-               $(".navbar").css({'opacity':'1','transition':'0.3s ease','background-color':'#333'});              
+               $(".navbar").css({'opacity':'1','transition':'0.3s ease','background-color':'#333'});
             }
-        
+
         else{
-               $(".navbar").css({'transition':'0.3s ease','background-color':'transparent'});   
+               $(".navbar").css({'transition':'0.3s ease','background-color':'transparent'});
         }
             });
-    var countDownDate = new Date("Apr 21, 2017 15:37:25").getTime();
+    var d = new Date();
+    var countDownDate = new Date("Sept 23, "+ d.getFullYear() +" 10:00:00").getTime();
     var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
-        
-  // Time calculations for days, hours, minutes and seconds
+
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
