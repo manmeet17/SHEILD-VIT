@@ -290,7 +290,6 @@ h1{
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
-
 }
 .board-details{
     width: 40%;
@@ -304,7 +303,7 @@ h1{
     width:150px;
     height:255px;
     cursor: pointer;
-    width: calc(100% * (1/8.5) - 10px - 1px);
+    width: calc(100% * (1/6) - 10px - 1px);
     margin: 0px 3%;
 }
 .board-box:hover{

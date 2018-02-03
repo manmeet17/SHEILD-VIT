@@ -9,7 +9,7 @@ $(document).ready(function(){
       });
     }, 2000);
     $(".type-out").typed({
-       strings: ["S.H.E.I.L.D.", "Startups Hub for Entrepreneurs and an Initiative for Leadership Development"],
+       strings: ["C.S.E.D.", "Centre for Social Entrepreneurship and Development"],
         typeSpeed: 50,
         backSpeed: 50,
         showCursor: true,
@@ -64,8 +64,7 @@ $(document).ready(function(){
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = "COMING SOON";
 
   if (distance < 0) {
     clearInterval(x);
